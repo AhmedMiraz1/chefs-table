@@ -1,7 +1,7 @@
 // import { CiClock2, GiChickenOven  } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart,handelAddToCook }) => {
   const { image, name, description, ingredients, preparing_time, calories } =
     cart;
   return (
@@ -27,9 +27,12 @@ const Cart = ({ cart }) => {
           <p>{preparing_time} minutes</p>
           <p> {calories} calories</p>
         </div>
-        <button className="bg-[#0BE58A] text-[#150B2B] text-lg font-medium px-6 py-3 rounded-3xl">
+        <div>
+        <button onClick={()=>handelAddToCook(cart)} className="bg-[#0BE58A] text-[#150B2B] text-lg font-medium px-6 py-3 rounded-3xl">
           Want to Cook
         </button>
+        <ToastContainer />
+        </div>
       </div>
     </div>
   );
@@ -37,6 +40,7 @@ const Cart = ({ cart }) => {
 
 Cart.propTypes = {
   cart: PropTypes.object.isRequired,
+  handelAddToCook:PropTypes.func.isRequired
 };
 
 export default Cart;

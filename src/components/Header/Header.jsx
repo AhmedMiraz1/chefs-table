@@ -46,7 +46,7 @@ const Header = () => {
       {/*Banner section  */}
 
       <div
-        className="bg-cover bg-no-repeat h-full lg:h-[60vh] w-full rounded-2xl my-10"
+        className="bg-cover bg-no-repeat h-full  w-full rounded-2xl my-10"
         style={{ backgroundImage: `url("${cover}")` }}
       >
         <div className="text-center py-5 lg:py-32">

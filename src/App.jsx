@@ -1,9 +1,18 @@
+import { useState } from "react";
 import "./App.css";
 import Cook from "./components/Cook/Cook";
 import Carts from "./components/Header/Carts/Carts";
 import Header from "./components/Header/Header";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+
+  const [cook, setCook]=useState([])
+  const handelAddToCook = cart =>{
+    const newCook =[...cook,cart]
+    setCook(newCook)
+    toast("Wow so easy !")
+  }
   return (
     <>
       <div className="container mx-auto px-8 lg:px-16 my-10 lg:my-16">
@@ -18,11 +27,12 @@ function App() {
             unforgettable gastronomic journey.
           </p>
          <div className="flex flex-col lg:flex-row gap-12 ">
-         <Carts></Carts>
-          <Cook></Cook>
+         <Carts handelAddToCook={handelAddToCook}></Carts>
+          <Cook cook={cook}></Cook>
          </div>
           
         </div>
+       
       </div>
     </>
   );
