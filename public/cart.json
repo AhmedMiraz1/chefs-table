@@ -1,0 +1,57 @@
+[
+    {
+      "image": "https://i.ibb.co/b3QwwDR/Rectangle-20170.png",
+      "id": 1,
+      "name": "Spaghetti Bolognese",
+      "description": "A flavorful and aromatic chicken curry with bold spices.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom"],
+      "preparing_time": 45 ,
+      "calories": 380
+    },
+    {
+      "image": "https://i.ibb.co/FsZS4ky/Rectangle-20170-1.png",
+      "id": 2,
+      "name": "Chicken Caesar Salad",
+      "description": "A refreshing pasta salad with Mediterranean flavors.",
+      "ingredients": ["300 g pasta", "150 g cherry tomatoes", "100 g feta cheese", "50 g olives"],
+      "preparing_time": 20,
+      "calories": 250
+    },
+    {
+      "image": "https://i.ibb.co/tZmqXj0/anna-pelzer-IGf-IGP5-ONV0-unsplash.jpg",
+      "id": 3,
+      "name": "Vegetable Stir-Fry",
+      "description": "A colorful and nutritious vegetable stir-fry with a savory sauce.",
+      "ingredients": ["200 g broccoli", "150 g carrots", "100 g bell peppers", "120 g tofu"],
+      "preparing_time": 25,
+      "calories": 180
+    },
+    {
+      "image": "https://i.ibb.co/tsCfRGt/ikhsan-baihaqi-pbc2w-Xb-QYp-I-unsplash.jpg",
+      "id": 4,
+      "name": "Decadent Chocolate Cake",
+      "description": "Indulge in a rich and moist chocolate cake topped with ganache.",
+      "ingredients": ["200 g flour", "150 g sugar", "100 g cocoa powder", "120 ml milk"],
+      "preparing_time": 50,
+      "calories": 320 
+    },
+    {
+      "image": "https://i.ibb.co/LSN9PRD/ikhsan-baihaqi-Rw-AXb8-Hv-s-U-unsplash.jpg",
+      "id": 5,
+      "name": "Grilled Salmon with Lemon Herb Butter",
+      "description": "Savor the freshness of grilled salmon seasoned with zesty herb butter.",
+      "ingredients": ["400 g salmon fillets", "100 g butter", "1 lemon", "50 g fresh herbs"],
+      "preparing_time": 30,
+      "calories": 280
+    },
+    {
+      "image": "https://i.ibb.co/gmgzNQ7/orijit-chatterjee-w-EBg-p-Ytynw-unsplash.jpg",
+      "id": 6,
+      "name": "Tropical Fruit Smoothie",
+      "description": "Enjoy a tropical blend of fresh fruits in a refreshing smoothie.",
+      "ingredients": ["200 g pineapple", "150 g mango", "100 g banana", "120 ml coconut milk"],
+      "preparing_time": 10,
+      "calories": 200
+    }
+  ]
+  

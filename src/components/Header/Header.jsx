@@ -46,19 +46,19 @@ const Header = () => {
       {/*Banner section  */}
 
       <div
-        className="bg-cover bg-no-repeat h-[70vh] w-full rounded-2xl my-10"
+        className="bg-cover bg-no-repeat h-full lg:h-[60vh] w-full rounded-2xl my-10"
         style={{ backgroundImage: `url("${cover}")` }}
       >
-        <div className="text-center py-32">
+        <div className="text-center py-5 lg:py-32">
           <h1 className="text-[#FFFFFF] text-2xl lg:text-5xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
           <p className=" text-lg font-normal text-[#FFFFFF] mt-6 mb-10">
             Unleash your culinary potential with personalized cooking classes
             tailored to your tastes and skill level. Master the art of <br /> cooking
             with expert guidance and hands-on experience.
           </p>
-          <div className="flex gap-8 justify-center items-center">
-            <button className="text-[#150B2B] text-xl font-semibold bg-[#0BE58A] px-7 py-5 rounded-3xl">Explore Now</button>
-             <button className="text-[#FFFFFF] text-xl font-semibold  px-7 py-5 rounded-3xl border-[1px]  border-white">Our Feedback</button></div>
+          <div className="flex gap-4 lg:gap-8 justify-center items-center">
+            <button className="text-[#150B2B] text-lg lg:text-xl font-medium lg:font-semibold bg-[#0BE58A] px-3 lg:px-7 py-2 lg:py-5 rounded-3xl">Explore Now</button>
+             <button className="text-[#FFFFFF] text-lg lg:text-xl font-medium lg:font-semibold px-3 lg:px-7 py-2 lg:py-5 rounded-3xl border-[1px]  border-white">Our Feedback</button></div>
         </div>
       </div>
     </div>
