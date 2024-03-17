@@ -44,8 +44,8 @@ const Cook = ({ cook, handelAddToCurrentCooking, currentCook }) => {
           ))}
         </div>
         <div className="flex justify-around items-center my-11">
-        <p>Total Time = <span>0</span> minutes</p>
-        <p>Total Calories = <span>0</span> calories</p>
+        <p>Total Time = <span className="text-green-600">0</span> minutes</p>
+        <p>Total Calories = <span className="text-green-600">0</span > calories</p>
       </div>
       </div>
       

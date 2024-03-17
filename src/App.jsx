@@ -25,6 +25,7 @@ function App() {
     const newCook = [...cook]
     newCook.splice(index, 1)
     setCook(newCook)
+    console.log(newCook)
   };
   return (
     <>
