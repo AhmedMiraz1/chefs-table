@@ -1,6 +1,7 @@
 import { CiClock2,  } from "react-icons/ci";
 import { MdOutlineWaterDrop } from "react-icons/md";
 import PropTypes from "prop-types";
+import { VscCircleFilled } from "react-icons/vsc";
 
 const Cart = ({ cart,handelAddToCook }) => {
   const { image, name, description, ingredients, preparing_time, calories } =
@@ -9,7 +10,7 @@ const Cart = ({ cart,handelAddToCook }) => {
     <div>
       <div className="p-6 border-[1px] border-[#28282833] rounded-2xl w-full h-full shadow-md">
         <div>
-          <img className="w-full h-52 rounded-2xl" src={image} alt="" />
+          <img className="w-full h-40 lg:h-64 rounded-2xl" src={image} alt="" />
         </div>
         <h1 className="text-[#282828] text-xl font-semibold my-5">{name}</h1>
         <p className="text-[#878787]  mt-4 mb-10">{description}</p>
@@ -19,8 +20,12 @@ const Cart = ({ cart,handelAddToCook }) => {
         </h2>
 
         {ingredients.map((list, idx) => (
-          <ul key={idx} className="text-[#878787] text-lg">
-            <li> * {list} </li>
+          <ul  key={idx} className="text-[#878787] text-lg">
+
+            <div className="flex items-center gap-1">
+              <li><VscCircleFilled /></li>
+            <li>  {list} </li>
+            </div>
           </ul>
         ))}
         <hr className="my-7" />

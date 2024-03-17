@@ -6,28 +6,28 @@ import { CiSearch } from "react-icons/ci";
 const Header = () => {
   return (
     <div>
-      <div className="flex  justify-between items-center">
+      <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-[#150B2B] text-2xl lg:text-4xl font-semibold">
+          <h1 className="text-[#150B2B] text-xl lg:text-4xl font-medium font-semibold">
             Recipe Calories
           </h1>
         </div>
         <div className=" hidden lg:flex gap-5 lg:gap-16 text-[#150B2BB2]">
-          <p>Home</p>
-          <p>Recipes</p>
-          <p>About</p>
-          <p>Search</p>
+          <p className="hover:bg-green-600 hover:pointer rounded-xl p-2 hover:text-purple-600">Home</p>
+          <p className="hover:bg-green-600 hover:pointer rounded-xl p-2 hover:text-purple-600">Recipes</p>
+          <p className="hover:bg-green-600 hover:pointer rounded-xl p-2 hover:text-purple-600">About</p>
+          <p className="hover:bg-green-600 hover:pointer rounded-xl p-2 hover:text-purple-600">Search</p>
         </div>
 
         <div className="flex items-center ">
           <p className="flex items-center bg-[#150B2B0D] px-6 py-3 rounded-2xl">
-            {" "}
+         
             <span>
-              {" "}
+            
               <CiSearch />
-            </span>{" "}
+            </span>
             <input
-              className=" mr-3 w-24 lg:w-48 bg-[#150B2B0D]"
+              className=" mr-3 w-20 lg:w-48 bg-[#150B2B0D]"
               type="search"
               name=""
               id=""
@@ -36,7 +36,7 @@ const Header = () => {
           </p>
 
           <img
-            className="rounded-full  ml-2 bg-[#0BE58A] p-2"
+            className="rounded-full  ml-2 bg-[#0BE58A] p-0 lg:p-2"
             src={frame}
             alt=""
           />
