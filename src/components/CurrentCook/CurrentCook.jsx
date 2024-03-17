@@ -1,23 +1,17 @@
+const CurrentCook = ({ currentCook }) => {
 
-
-const CurrentCook = ({CurrentCook}) => {
-
-    console.log(CurrentCook)
-
-
- 
-
-    return (
-        <div>
-
-            <div>
-                <p></p>
-
-
-            </div>
-            
-        </div>
-    );
+  return (
+    <div className="flex justify-evenly gap-5 bg-[#28282808] px-6 py-4 my-5 rounded-2xl  ">
+        <p></p>
+        <p className="text-justify"> {currentCook.name} </p>
+        <p>
+          {currentCook.preparing_time} <br /> minutes
+        </p>
+        <p>
+          {currentCook.calories} <br /> calories
+        </p>
+      </div>
+  );
 };
 
 export default CurrentCook;
