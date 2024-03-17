@@ -1,4 +1,9 @@
+
+import PropTypes from "prop-types";
+
+
 const CurrentCook = ({ currentCook }) => {
+ 
 
   return (
     <div className="flex justify-evenly gap-5 bg-[#28282808] px-6 py-4 my-5 rounded-2xl  ">
@@ -13,5 +18,9 @@ const CurrentCook = ({ currentCook }) => {
       </div>
   );
 };
+
+CurrentCook.propTypes={
+  currentCook:PropTypes.object.isRequired
+}
 
 export default CurrentCook;

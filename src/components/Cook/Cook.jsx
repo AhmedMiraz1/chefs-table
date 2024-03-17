@@ -25,7 +25,7 @@ const Cook = ({ cook, handelAddToCurrentCooking, currentCook }) => {
         ))}
 
         <h1 className="text-center text-[#282828] text-2xl font-semibold mt-8">
-          Currently cooking: {currentCook.length || 0}
+          Currently cooking: {currentCook?.length || 0}
         </h1>
         <hr className="my-7" />
         <div className="flex justify-evenly">
