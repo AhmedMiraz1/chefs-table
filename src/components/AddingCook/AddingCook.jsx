@@ -5,7 +5,7 @@ const AddingCook = ({addCook}) => {
     return (
         <div>
 
-            <div className="flex justify-evenly gap-5 bg-[#28282808] px-6 py-4 my-5 rounded-2xl ">
+            <div className="flex justify-evenly gap-5 bg-[#28282808] px-6 py-4 my-5 rounded-2xl  ">
                 <p className="text-justify">  {name} </p>
                 <p>{preparing_time} <br /> minutes</p>
                 <p>{calories} <br /> calories</p>

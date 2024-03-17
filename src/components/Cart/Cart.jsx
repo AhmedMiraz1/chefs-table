@@ -31,7 +31,7 @@ const Cart = ({ cart,handelAddToCook }) => {
         <button onClick={()=>handelAddToCook(cart)} className="bg-[#0BE58A] text-[#150B2B] text-lg font-medium px-6 py-3 rounded-3xl">
           Want to Cook
         </button>
-        <ToastContainer />
+       
         </div>
       </div>
     </div>
