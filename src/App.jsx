@@ -8,6 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [cook, setCook] = useState([]);
+  const [currentCook, setCurrentCook]=useState([])
+
   const handelAddToCook = (cart) => {
     const alreadyExist = cook.find((c) => c.id == cart.id);
     if (!alreadyExist) {
@@ -17,6 +19,12 @@ function App() {
       toast.error("Already added");
     }
   };
+  const handelAddToCurrentCooking = current=>{
+    const newCurrentCook = [...currentCook,current]
+    setCurrentCook(newCurrentCook)
+
+    console.log('current added')
+  }
   return (
     <>
       <div className="container mx-auto px-8 lg:px-16 my-10 lg:my-16">
@@ -34,7 +42,7 @@ function App() {
           </p>
           <div className="flex flex-col lg:flex-row gap-12 ">
             <Carts handelAddToCook={handelAddToCook}></Carts>
-            <Cook cook={cook}></Cook>
+            <Cook cook={cook} handelAddToCurrentCooking={handelAddToCurrentCooking} currentCook={currentCook}  ></Cook>
           </div>
         </div>
         <ToastContainer />
