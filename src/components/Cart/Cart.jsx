@@ -1,4 +1,5 @@
-// import { CiClock2, GiChickenOven  } from "react-icons/fa";
+import { CiClock2,  } from "react-icons/ci";
+import { MdOutlineWaterDrop } from "react-icons/md";
 import PropTypes from "prop-types";
 
 const Cart = ({ cart,handelAddToCook }) => {
@@ -24,8 +25,14 @@ const Cart = ({ cart,handelAddToCook }) => {
         ))}
         <hr className="my-7" />
         <div className="flex justify-between text-[#282828CC] mb-6">
+         <div className="flex gap-2 items-center">
+         <p>< CiClock2/></p>
           <p>{preparing_time} minutes</p>
+         </div>
+         <div className="flex gap-2 items-center">
+         <p><MdOutlineWaterDrop/></p>
           <p> {calories} calories</p>
+         </div>
         </div>
         <div>
         <button onClick={()=>handelAddToCook(cart)} className="bg-[#0BE58A] text-[#150B2B] text-lg font-medium px-6 py-3 rounded-3xl">

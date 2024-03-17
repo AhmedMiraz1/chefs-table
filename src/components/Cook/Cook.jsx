@@ -16,9 +16,10 @@ const Cook = ({ cook, handelAddToCurrentCooking, currentCook }) => {
           <p>Time</p>
           <p>Calories</p>
         </div>
-        {cook?.map((addCook) => (
+        {cook?.map((addCook,idx) => (
           <AddingCook
             key={addCook.id}
+            idx={idx}
             addCook={addCook}
             handelAddToCurrentCooking={handelAddToCurrentCooking}
           ></AddingCook>
@@ -37,11 +38,17 @@ const Cook = ({ cook, handelAddToCurrentCooking, currentCook }) => {
           {currentCook?.map((cook, idx) => (
             <CurrentCook
               key={idx}
+              idx={idx}
               currentCook={cook}
             ></CurrentCook>
           ))}
         </div>
+        <div className="flex justify-around items-center my-11">
+        <p>Total Time = <span>0</span> minutes</p>
+        <p>Total Calories = <span>0</span> calories</p>
       </div>
+      </div>
+      
     </div>
   );
 };

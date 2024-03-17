@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 
-const AddingCook = ({ addCook, handelAddToCurrentCooking }) => {
+const AddingCook = ({ addCook, handelAddToCurrentCooking,idx }) => {
+  
   const { name, preparing_time, calories } = addCook;
 
   return (
     <div>
       <div className="flex justify-evenly gap-5 bg-[#28282808] px-6 py-4 my-5 rounded-2xl  ">
-        <p></p>
+        <p>{idx+1}</p>
         <p className="text-justify"> {name} </p>
         <p>
           {preparing_time} <br /> minutes
@@ -28,6 +29,7 @@ const AddingCook = ({ addCook, handelAddToCurrentCooking }) => {
 AddingCook.propTypes = {
   addCook: PropTypes.object.isRequired,
   handelAddToCurrentCooking: PropTypes.func.isRequired,
+  idx:PropTypes.array
 };
 
 export default AddingCook;
